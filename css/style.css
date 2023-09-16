@@ -1,0 +1,196 @@
+html, body {
+    overflow-x: hidden;
+  }
+  
+  /*
+    Enable smooth scrolling on the whole document
+   */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  /*
+    Add .section to every anchored element for scroll margin
+   */
+  .section {
+    scroll-margin-top: 2rem;
+  }
+  
+  /* Header */
+  .site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-decoration: none;
+  }
+  .nav-link {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8) !important;
+  }
+  
+  .social-nav .nav-link {
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus,
+  .active .nav-link {
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+  /* Hero (intro) section */
+  .intro-title {
+    font-weight: 800;
+  }
+  .wave-bg {
+    display: block;
+    height: 220px;
+    width: 100%;
+    min-width: 600px;
+    transform-origin: top;
+    background-image: url("../images/wave-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  img.avatar {
+    border-radius: 30px;
+    height: 550px; 
+
+  }
+   
+  /* Grid Item */
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+  
+  .grid-item {
+    padding-bottom: 12px;
+  }
+  .grid-item img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Footer section */
+  footer a:not(.nav-link) {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Additional utility styles */
+  .container-narrow {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  .text-small {
+    font-size: 0.875rem;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.05em;
+  }
+  
+  .hover-effect {
+    transition: transform .18s ease-in-out;
+  }
+  
+  .hover-effect:hover {
+    transform: translateY(-2px);
+  }
+  
+  .marker {
+    position: relative;
+    display: inline;
+    width: auto;
+  }
+  
+  .marker-center {
+    padding-right: 0;
+  }
+  
+  .marker:after {
+    content: "";
+    width: 125px;
+    height: 30px;
+    position: absolute;
+    bottom: -25px;
+    right: -30px;
+    background-image: url("../images/marker.svg");
+    background-repeat: no-repeat;
+  }
+  
+  .marker-center:after {
+    bottom: -30px;
+    left: 50%;
+    margin-left: -60px;
+  }
+  .entry-title a {
+    text-decoration: none;
+  }
+  button {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, hsl(71, 79%, 63%) 0%,hsl(61, 85%, 55%) 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+  button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  button:hover svg {
+    transform: rotate(45deg);
+  }
+  
+  
